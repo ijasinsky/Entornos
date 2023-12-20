@@ -24,7 +24,7 @@ class Nave:
     def dibujar(self):
         # aumenta contador
         self.contador = (self.contador + 1) % 40
-        #cojo el punteri a la pantalla
+        #cojo el puntero a la pantalla
         pantalla = pygame.display.get_surface()
         #
         seleccionada = self.contador // 20
