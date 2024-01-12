@@ -7,6 +7,7 @@ class Nave(pygame.sprite.Sprite):
         self.manolos = [pygame.image.load("C:\\Users\\alumne-DAM\\Documents\\Entornos\\Entornos\\imagenes\\58e900c5eb97430e819064d5_1.png"), pygame.image.load("C:\\Users\\alumne-DAM\\Documents\\Entornos\\Entornos\\imagenes\\58e900c5eb97430e819064d5_2.png")]
         self.indice_manolo = 0
         self.image = self.manolos[self.indice_manolo]
+        self.mask = pygame.mask.from_surface(self.image)
         self.contador_imagen = 0
         #Cargamos imagen
         self.image = pygame.image.load("C:\\Users\\alumne-DAM\\Documents\\Entornos\\Entornos\\imagenes\\58e900c5eb97430e819064d5_1.png")
@@ -34,6 +35,13 @@ class Nave(pygame.sprite.Sprite):
         self.contador_imagen = (self.contador_imagen + 1) % 40
         self.indice_manolo = self.contador_imagen // 20
         self.image = self.manolos[self.indice_manolo]
+
+        grupo_sprites_enemigos = args[3]
+        running = args[4]
+        enemigo_colision = pygame.sprite.spritecollideany(self, grupo_sprites_enemigos, pygame.sprite.collide_mask)
+        if enemigo_colision:
+            enemigo_colision.kill()
+            running[0] = False
 
     def disparar(self, grupo_sprites_todos, grupo_sprites_balas):
         momento_actual = pygame.time.get_ticks()
@@ -80,6 +88,12 @@ class Fondo(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         #actualizar la posicion del rectangulo para que coincida con "posicion"
         self.rect.topleft = (0,0)
+
+    # def update(self, *args: Any, **kwargs: Any) -> None:
+    #     self.rect.y += 1
+    #     pantalla =  pygame.display.get_surface()
+    #     if self.rect.y >= pantalla.get_height():
+    #         self.rect.y = - pantalla.get_height()
 
 class Bala(pygame.sprite.Sprite):
     def __init__(self, posicion) -> None:
