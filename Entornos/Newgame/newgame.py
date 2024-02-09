@@ -29,7 +29,7 @@ x,y = pygame.mouse.get_pos()
 x = x/6
 angulo = 180 - x
 
-img = pygame.transform.rotate(Planeta, (angulo))
+img = pygame.transform.rotate(Planeta.P, (angulo))
 img_rect = img.get_rect()
 img_rect.center = posicion
 ventana.blit(img, img_rect)
