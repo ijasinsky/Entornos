@@ -1,0 +1,95 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "gradle",
+			"id": "c:\\Users\\alumne-DAM\\Documents\\Lenguaje-Marcas\\GradlerunGradle",
+			"script": "run",
+			"description": "Runs this project as a JVM application",
+			"group": "application",
+			"project": "Gradle",
+			"buildFile": "C:\\Users\\alumne-DAM\\Documents\\Lenguaje-Marcas\\Gradle\\build.gradle",
+			"rootProject": "Gradle",
+			"projectFolder": "c:\\Users\\alumne-DAM\\Documents\\Lenguaje-Marcas\\Gradle",
+			"workspaceFolder": "c:\\Users\\alumne-DAM\\Documents\\Lenguaje-Marcas\\Gradle",
+			"args": "",
+			"javaDebug": false,
+			"problemMatcher": [
+				"$gradle"
+			],
+			"label": "gradle: run"
+		},
+		{
+			"type": "gradle",
+			"id": "c:\\Users\\alumne-DAM\\Documents\\Lenguaje-Marcas\\Gradleapp:runapp",
+			"script": "app:run",
+			"description": "Runs this project as a JVM application",
+			"group": "application",
+			"project": "app",
+			"buildFile": "C:\\Users\\alumne-DAM\\Documents\\Lenguaje-Marcas\\Gradle\\app\\build.gradle",
+			"rootProject": "Gradle",
+			"projectFolder": "c:\\Users\\alumne-DAM\\Documents\\Lenguaje-Marcas\\Gradle",
+			"workspaceFolder": "c:\\Users\\alumne-DAM\\Documents\\Lenguaje-Marcas\\Gradle",
+			"args": "",
+			"javaDebug": false,
+			"problemMatcher": [
+				"$gradle"
+			],
+			"label": "gradle: app:run"
+		},
+		{
+			"type": "gradle",
+			"id": "c:\\Users\\alumne-DAM\\Documents\\Lenguaje-Marcas\\GradlebuildGradle",
+			"script": "build",
+			"description": "Assembles and tests this project.",
+			"group": "build",
+			"project": "Gradle",
+			"buildFile": "C:\\Users\\alumne-DAM\\Documents\\Lenguaje-Marcas\\Gradle\\build.gradle",
+			"rootProject": "Gradle",
+			"projectFolder": "c:\\Users\\alumne-DAM\\Documents\\Lenguaje-Marcas\\Gradle",
+			"workspaceFolder": "c:\\Users\\alumne-DAM\\Documents\\Lenguaje-Marcas\\Gradle",
+			"args": "",
+			"javaDebug": false,
+			"problemMatcher": [
+				"$gradle"
+			],
+			"label": "gradle: build"
+		},
+		{
+			"type": "gradle",
+			"id": "c:\\Users\\alumne-DAM\\Documents\\Lenguaje-Marcas\\GradlecleanGradle",
+			"script": "clean",
+			"description": "Deletes the build directory.",
+			"group": "build",
+			"project": "Gradle",
+			"buildFile": "C:\\Users\\alumne-DAM\\Documents\\Lenguaje-Marcas\\Gradle\\build.gradle",
+			"rootProject": "Gradle",
+			"projectFolder": "c:\\Users\\alumne-DAM\\Documents\\Lenguaje-Marcas\\Gradle",
+			"workspaceFolder": "c:\\Users\\alumne-DAM\\Documents\\Lenguaje-Marcas\\Gradle",
+			"args": "",
+			"javaDebug": false,
+			"problemMatcher": [
+				"$gradle"
+			],
+			"label": "gradle: clean"
+		},
+		{
+			"type": "gradle",
+			"id": "c:\\Users\\alumne-DAM\\Documents\\Lenguaje-Marcas\\GradlejarGradle",
+			"script": "jar",
+			"description": "Assembles a jar archive containing the main classes.",
+			"group": "build",
+			"project": "Gradle",
+			"buildFile": "C:\\Users\\alumne-DAM\\Documents\\Lenguaje-Marcas\\Gradle\\build.gradle",
+			"rootProject": "Gradle",
+			"projectFolder": "c:\\Users\\alumne-DAM\\Documents\\Lenguaje-Marcas\\Gradle",
+			"workspaceFolder": "c:\\Users\\alumne-DAM\\Documents\\Lenguaje-Marcas\\Gradle",
+			"args": "",
+			"javaDebug": false,
+			"problemMatcher": [
+				"$gradle"
+			],
+			"label": "gradle: jar"
+		}
+	]
+}
